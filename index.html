@@ -3,111 +3,113 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Horta na Porta - Agrinho 2025</title>
+  <title>Horta na Porta - Concurso Agrinho 2025</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
   <header>
-    <h1>HORTA NA PORTA</h1>
-    <h2>Conectando o Campo à Cidade</h2>
-    <h3>Projeto Agrinho 2025</h3>
+    <h1>🌱 Horta na Porta</h1>
+    <h2>Uma ponte entre o campo e a cidade</h2>
+    <h3>Do campo ou da cidade para a sua mesa, com inovação e responsabilidade</h3>
   </header>
 
+  <div>
+    <button onclick="scrollToBottom()" id="btnFim" title="Ir para o fim">⬇️ Ir para o final</button>
+    <script>
+      function scrollToBottom() {
+        window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
+      }
+
+      window.addEventListener('scroll', function () {
+        const btn = document.getElementById("btnFim");
+        if (document.body.scrollTop < 100 && document.documentElement.scrollTop < 100) {
+          btn.style.display = "block";
+        } else {
+          btn.style.display = "none";
+        }
+      });
+    </script>
+  </div>
+
   <nav>
-    <a href="#sobre">Sobre</a>
-    <a href="#beneficios">Benefícios</a>
+    <a href="#proposta">Proposta</a>
+    <a href="#objetivos">Objetivos</a>
+    <a href="#futuro">Objetivo Futuro</a>
     <a href="#como-funciona">Como Funciona</a>
+    <a href="#tecnologia">Tecnologia</a>
     <a href="#galeria">Galeria</a>
-    <a href="#contato">Contato</a>
   </nav>
 
   <main>
-    <section id="sobre">
-      <h2>Sobre o Projeto</h2>
-      <p>O projeto "Horta na Porta" visa conectar pequenos produtores rurais a consumidores urbanos por meio da entrega de alimentos frescos, saudáveis e sustentáveis diretamente do campo para a porta de casa.</p>
+    <section id="proposta">
+      <h2>Proposta</h2>
+      <p>O projeto "Horta na Porta" visa conectar pequenos produtores urbanos e rurais a consumidores das cidades...</p>
     </section>
 
-    <section id="beneficios">
-      <h2>Benefícios</h2>
+    <section id="objetivos">
+      <h2>Objetivos</h2>
       <ul>
-        <li>Alimentos orgânicos e frescos</li>
-        <li>Geração de renda para agricultores locais</li>
-        <li>Redução do desperdício e uso de embalagens</li>
-        <li>Estímulo à alimentação saudável</li>
+        <li>Promover alimentação saudável nas cidades</li>
+        <li>Estimular a agricultura familiar e urbana</li>
+        <li>Reduzir o desperdício e os custos com transporte</li>
+        <li>Promover uma entrega ecológica e mais sustentável</li>
+      </ul>
+    </section>
+
+    <section id="futuro">
+      <h2>Objetivo Futuro - Horta na Escola</h2>
+      <ul>
+        <li>Fomentar o empreendedorismo estudantil...</li>
       </ul>
     </section>
 
     <section id="como-funciona">
       <h2>Como Funciona</h2>
-      <ol>
-        <li>Produtores cadastram seus produtos disponíveis</li>
-        <li>Clientes fazem pedidos online</li>
-        <li>Entregas são realizadas semanalmente nas casas dos consumidores</li>
-      </ol>
+      <p>- Plataforma digital simples (site ou app) para consumidores escolherem hortaliças e produtores locais entregarem.</p>
+      <p>- Escolas podem implementar hortas para ensino prático em contraturno.</p>
+    </section>
+
+    <section id="tecnologia">
+      <h2>Inovação e Tecnologia</h2>
+      <p>Uso de plataforma com localização das hortas, rastreabilidade e fidelização por pontos.</p>
     </section>
 
     <section id="galeria">
-      <h2>Galeria</h2>
+      <h2>Galeria de fotos</h2>
       <div class="gallery">
-        <div>
-          <img src="img/horta1.jpg" alt="Horta orgânica">
-          <p>Hortas cuidadas com carinho</p>
-        </div>
-        <div>
-          <img src="img/entrega.jpg" alt="Entrega de alimentos">
-          <p>Entrega direto na sua casa</p>
-        </div>
-        <div>
-          <img src="img/familia.jpg" alt="Família consumindo alimentos">
-          <p>Famílias mais saudáveis</p>
-        </div>
+        <div><img src="https://images.unsplash.com/photo-1603032248720-f8b94f742b35" alt="Horta urbana"><p>teste</p></div>
+        <div><img src="https://images.unsplash.com/photo-1556761175-4b46a572b786" alt="Entrega de alimentos frescos"><p>teste</p></div>
+        <div><img src="https://images.unsplash.com/photo-1582281298058-a98c5c60c89b" alt="Crianças cuidando de horta"><p>teste</p></div>
+        <div><img src="https://images.unsplash.com/photo-1611259212455-9c3c1d54e7bc" alt="Tecnologia na agricultura"><p>teste</p></div>
+        <div><img src="img/igor-miske-bsMFZ1957Zg-unsplash.jpg" alt="Tecnologia na agricultura"><p>Igor Miske - Unsplash</p></div>
       </div>
-    </section>
-
-    <section id="contato">
-      <h2>Entre em Contato</h2>
-      <p>Email: contato@hortanaporta.com.br</p>
-      <p>Instagram: @hortanaporta</p>
     </section>
 
     <section>
       <div class="espacamento-final">
-        <h2>Espaçamento final</h2>
+        <h2>Espaçamento Final</h2>
         <p>Espaçamento final</p>
       </div>
     </section>
   </main>
 
-  <footer>
-    <p>&copy; 2025 Horta na Porta - Todos os direitos reservados</p>
-  </footer>
-
-  <button onclick="topFunction()" id="btnTopo" title="Voltar ao topo">Topo</button>
-  <button onclick="bottomFunction()" id="btnFim" title="Ir para o final">Fim</button>
-
-  <script>
-    const btnTopo = document.getElementById("btnTopo");
-    const btnFim = document.getElementById("btnFim");
-
-    window.onscroll = function () {
-      if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-        btnTopo.style.display = "block";
-        btnFim.style.display = "block";
-      } else {
-        btnTopo.style.display = "none";
-        btnFim.style.display = "none";
+  <div>
+    <button onclick="scrollToTop()" id="btnTopo" title="Voltar ao topo">⬆️ Ir para o início</button>
+    <script>
+      function scrollToTop() {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
       }
-    };
 
-    function topFunction() {
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-    }
+      window.onscroll = function () {
+        const btn = document.getElementById("btnTopo");
+        btn.style.display = (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) ? "block" : "none";
+      };
+    </script>
+  </div>
 
-    function bottomFunction() {
-      window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
-    }
-  </script>
-
+  <footer>
+    <p>Projeto Agrinho 2025 | Criado por xxxxxxxx | Foco na conexão campo-cidade</p>
+    <p>Criado por xxxxxx | Colégio Cívico Militar - Monteiro Lobato - Umuarama PR</p>
+  </footer>
 </body>
 </html>
